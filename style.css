@@ -1,5 +1,9 @@
-.styled {
+
+.body{
     text-align: center;
+}
+
+.styled {
     margin-top: 50px;
     border: 0;
     line-height: 2.5;
