@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Integrate Feda Checkout to my website</title>
+  <script src="https://cdn.fedapay.com/checkout.js?v=1.1.5"></script>
+</head>
+<body>
+  <button id="pay-btn">Payer 5000 FCFA</button>
+  <script type="text/javascript">
+      FedaPay.init('#pay-btn', {
+      public_key: 'pk_live_QVNuOc7YLDk1IiDrvfwLOB6m',
+      transaction: {
+        amount: 5000,
+        description: 'Buy my product'
+      },
+      customer: {
+        email: 'Client@gmail.com',
+        lastname: 'Client',
+        firstname: 'Client',
+      }
+     });
+  </script>
+</body>
+</html>
