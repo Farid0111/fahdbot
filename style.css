@@ -1,4 +1,6 @@
 .styled {
+    text-align: center;
+    margin-top: 50px;
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -17,7 +19,7 @@
 }
 
 .styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: greenyellow;
 }
 
 .styled:active {
