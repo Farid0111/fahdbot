@@ -1,3 +1,6 @@
+<!--
+Replace YOUR_API_PUBLIC_KEY by the API public key of your sandbox or live account.
+-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,20 +10,9 @@
   <script src="https://cdn.fedapay.com/checkout.js?v=1.1.5"></script>
 </head>
 <body>
-  <button id="pay-btn">Pay 1000 FCFA</button>
+  <button id="pay-btn">Pay 100 FCFA</button>
   <script type="text/javascript">
-      FedaPay.init('#pay-btn', {
-      public_key: 'pk_live_QVNuOc7YLDk1IiDrvfwLOB6m',
-      transaction: {
-        amount: 5000,
-        description: 'Buy my product'
-      },
-      customer: {
-        email: 'johndoe@gmail.com',
-        lastname: 'Doe',
-        firstname: 'John',
-      }
-     });
+      FedaPay.init('#pay-btn', { public_key: 'pk_live_QVNuOc7YLDk1IiDrvfwLOB6m' });
   </script>
 </body>
 </html>
