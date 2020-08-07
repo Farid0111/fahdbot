@@ -1,6 +1,3 @@
-<!--
-Replace YOUR_API_PUBLIC_KEY by the API public key of your sandbox or live account.
--->
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,11 +5,29 @@ Replace YOUR_API_PUBLIC_KEY by the API public key of your sandbox or live accoun
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>Integrate Feda Checkout to my website</title>
   <script src="https://cdn.fedapay.com/checkout.js?v=1.1.5"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <button id="pay-btn">Pay 100 FCFA</button>
+<body class="body">
+ 
+<button class="favorite styled" 
+        id="pay-btn"
+        type="button">
+        Payer 5000 FCFA
+</button>
+
   <script type="text/javascript">
-      FedaPay.init('#pay-btn', { public_key: 'pk_live_QVNuOc7YLDk1IiDrvfwLOB6m' });
+      FedaPay.init('#pay-btn', {
+      public_key: 'pk_live_QVNuOc7YLDk1IiDrvfwLOB6m',
+      transaction: {
+        amount: 5000,
+        description: 'Buy my product'
+      },
+      customer: {
+        email: 'Client@gmail.com',
+        lastname: 'Client',
+        firstname: 'Client',
+      }
+     });
   </script>
 </body>
 </html>
